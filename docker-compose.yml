@@ -4,7 +4,7 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    image: pavani802/api:latest  # <- Docker Hub image name
+    image: pavani802/backend:latest  # <- Docker Hub image name
     ports:
       - "8000:8000"
 
