@@ -2,7 +2,7 @@
 services:
   api:
     build:
-      context: ./main
+      context: ./backend
       dockerfile: Dockerfile
     image: pavani802/api:latest  # <- Docker Hub image name
     ports:
