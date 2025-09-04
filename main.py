@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 import pickle
 import numpy as np
-from basemodel import IrisRequest
+from backend.basemodel import IrisRequest
 import pandas as pd
 
 app=FastAPI(title="ML e2e application")
@@ -15,7 +15,6 @@ def read_root():
 @app.post("/predict")
 def predict(request: IrisRequest):
     d=request.data
-
     data_df = pd.DataFrame([[
     d.sepal_length, d.sepal_width, d.petal_length, d.petal_width]], columns=["sepal_length", "sepal_width", "petal_length", "petal_width"])
     scaled_data=scalar.transform(data_df)

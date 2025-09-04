@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from basemodel import IrisData, IrisRequest
+from backend.basemodel import IrisData, IrisRequest
 
 header=st.title("Hello, Streamlit!")
 
