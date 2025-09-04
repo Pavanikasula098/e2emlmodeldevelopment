@@ -56,7 +56,7 @@ jobs:
       run: echo ${{ steps.docker_build.outputs.digest }}
     
     - name: Trigger Render deployment
-      uses: render-examples/render-github-action@v1
+      uses: Pavanikasula098/e2emlmodeldevelopment@main
       with:
         service-id: ${{ secrets.SERVICE_ID }}
         api-key: ${{ secrets.RENDER_API_KEY }}
