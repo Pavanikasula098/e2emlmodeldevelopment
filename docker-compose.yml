@@ -1,4 +1,3 @@
-version: "3.9"
 
 services:
   api:
@@ -11,7 +10,7 @@ services:
 
   frontend:
     build:
-      context: ./app
+      context: ./frontend
       dockerfile: Dockerfile
     image: pavani802/frontend:latest  # <- Docker Hub image name
     ports:
