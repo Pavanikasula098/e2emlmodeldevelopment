@@ -45,7 +45,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Set up Docker Compose
-      run: docker-compose -f docker-compose.yml build
+      run: docker-compose -f docker_compose.yml build
 
     - name: Push API image
       run: docker push ${{ secrets.DOCKER_USERNAME }}/backend:latest
