@@ -4,6 +4,8 @@ WORKDIR /app
 
 COPY ../requirements.txt .
 
+COPY . .
+
 RUN pip install -r requirements.txt
 
 ENV PORT=8000
