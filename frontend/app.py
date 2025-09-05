@@ -1,8 +1,11 @@
 import streamlit as st
 import requests
 from backend.basemodel import IrisData, IrisRequest
+import os
 
 header=st.title("Hello, Streamlit!")
+
+API_URL=os.getenv("API_URL","http://localhost:8000")
 
 url = "http://127.0.0.1:8000/predict"
 
@@ -20,7 +23,7 @@ iris_data=IrisRequest(
     ))
 
 if st.button("Predict"):
-    response=requests.post(url,json=iris_data.model_dump())
+    response=requests.post(f"{API_URL}/predict",json=iris_data.model_dump())
 
     try:
         if response.status_code==200:
