@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY ../requirements.txt .
 
-COPY . .
+COPY .. .
 RUN pip install -r requirements.txt
 
 # Copy Streamlit app files
