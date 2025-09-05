@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-from basemodel import IrisData, IrisRequest
+from shared.basemodel import IrisData, IrisRequest
 import os
 
 header=st.title("Hello, Streamlit!")
