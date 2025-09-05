@@ -1,7 +1,7 @@
 from fastapi import FastAPI, Request
 import pickle
 import numpy as np
-from backend.basemodel import IrisRequest
+from basemodel import IrisRequest
 import pandas as pd
 
 app=FastAPI(title="ML e2e application")
