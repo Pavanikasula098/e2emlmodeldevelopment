@@ -7,3 +7,4 @@ uvicorn==0.35.0
 pytest==7.4.3
 httpx==0.24.1
 scikit-learn==1.5.1
+-e .
